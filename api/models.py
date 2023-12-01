@@ -4,6 +4,7 @@ from django.db import models
 
 
 class Categoria(models.Model):
+    """modelo Categoria"""
     nombre = models.CharField(max_length=50)
 
     def __str__(self):
@@ -11,9 +12,10 @@ class Categoria(models.Model):
 
 
 class Api(models.Model):
-    API = models.CharField(primary_key=True, max_length=6)
-    Description = models.CharField(max_length=50)
-    Auth = models.PositiveSmallIntegerField()
+    """modelo Categoria"""
+    API = models.CharField(max_length=50)
+    Description = models.CharField(max_length=200)
+    Auth = models.CharField(max_length=20, null=True, blank=True)
     HTTPS = models.BooleanField(default=False)
     Cors = models.BooleanField(default=False)
     Link = models.URLField()
