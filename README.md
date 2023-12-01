@@ -12,7 +12,8 @@
 # Introduccion
 App de django que contiene dos modelos ("Api" y "Categorias") que mediante un endpoint de metodo POST (donde una task trabajada con Celery le pega a una api externa) 
 logramos cargar la base de datos de Postgres previamente estructurada gracias al ORM de Django con los modelos anteriormente descriptos. Luego una serie de 
-clases asociadas a diversos endpoint nos permiten filtrar, listar y crear los distintos objetos.
+clases asociadas a diversos endpoint nos permiten filtrar, listar y crear los distintos objetos, que pueden ser probados con una aplicación que nos permite testear APIs
+como Postman.
 
 # Como correr
 
